@@ -1,4 +1,4 @@
 #!/bin/bash
 decomposePar -force
- mpirun --hostfile machines -np 4 pisoFoam -parallel > log &
+ mpirun -np 4 pisoFoam -parallel > log &
 reconstructPar
