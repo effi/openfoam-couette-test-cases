@@ -37,7 +37,7 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-05;
+        tolerance       1e-06;
         relTol          0;
     }
 
@@ -45,7 +45,7 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-05;
+        tolerance       1e-06;
         relTol          0;
     }
 
@@ -61,7 +61,7 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-05;
+        tolerance       1e-06;
         relTol          0;
     }
 
@@ -69,7 +69,7 @@ solvers
     {
         solver          PBiCG;
         preconditioner  DILU;
-        tolerance       1e-05;
+        tolerance       1e-06;
         relTol          0;
     }
 }
