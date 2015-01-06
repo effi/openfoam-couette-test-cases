@@ -19,7 +19,7 @@ application     pisoFoam;
 
 startFrom       startTime;
 
-startTime       20;
+startTime       0;
 
 stopAt          endTime;
 /* stopAt          writeNow; */
