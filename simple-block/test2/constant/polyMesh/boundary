@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.2                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+6
+(
+    inlet
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          270;
+        startFace       6669;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  outlet;
+    }
+    outlet
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          270;
+        startFace       6939;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  inlet;
+    }
+    side_bottom
+    {
+        type            wall;
+        nFaces          81;
+        startFace       7209;
+    }
+    side_top
+    {
+        type            wall;
+        nFaces          81;
+        startFace       7290;
+    }
+    side_left
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          270;
+        startFace       7371;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  side_right;
+    }
+    side_right
+    {
+        type            cyclic;
+        inGroups        1(cyclic);
+        nFaces          270;
+        startFace       7641;
+        matchTolerance  0.0001;
+        transform       unknown;
+        neighbourPatch  side_left;
+    }
+)
+
+// ************************************************************************* //
