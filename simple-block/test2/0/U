@@ -28,7 +28,7 @@ boundaryField
     side_top
     {
         type movingWallVelocity;
-        value           uniform (100 0 0);
+        value           uniform (1 0 0);
     }
     inlet
     {
